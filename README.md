@@ -7,10 +7,10 @@ Programming can be presented in various languages.
 
 ##  Different Coding Languages:
 
-+ HTML
-> [HTMl Basics](https://en.wikipedia.org/wiki/HTML "Title")
-+ JavaScript
-+ Python
-+ C++
+> HTML
++ [HTMl Basics](https://en.wikipedia.org/wiki/HTML "Title")
+> JavaScript
+> Python
+> C++
 
 
