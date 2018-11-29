@@ -30,3 +30,4 @@ Programming can be presented in various languages.
 ><strong>SQL</strong> - Definition - What does Structured Query Language (SQL) mean? Structured Query Language (SQL) is a standard computer language for relational database management and data manipulation. SQL is used to query, insert, update and modify data.
 + [More about SQL](https://en.wikipedia.org/wiki/SQL "Title")
 
+``There is a literal backtick (`) here.``
