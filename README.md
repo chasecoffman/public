@@ -16,3 +16,4 @@ Programming can be presented in various languages.
 > C++
 + [More about C++](https://en.wikipedia.org/wiki/C++ "Title")
 
+![Alt text](/path/to/img.jpg)
