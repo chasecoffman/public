@@ -1,8 +1,15 @@
 # public
-## vim example
+## Programming Info
 
 https://daringfireball.net/projects/markdown/synta
 
-I vim'd
+Programming can be presented in various languages. 
 
-Do you even vim, bro?
+##  Different Coding Languages:
+
++ HTML
++ JavaScript
++ Python
++ C++
+
+
