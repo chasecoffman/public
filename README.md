@@ -8,7 +8,7 @@ Programming can be presented in various languages.
 ##  Different Coding Languages:
 
 + HTML
-This is [an example](http://www.google.com/ "Title") inline link.
+> [HTMl Basics](https://en.wikipedia.org/wiki/HTML "Title")
 + JavaScript
 + Python
 + C++
