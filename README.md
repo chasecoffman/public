@@ -16,4 +16,4 @@ Programming can be presented in various languages.
 > C++
 + [More about C++](https://en.wikipedia.org/wiki/C++ "Title")
 
-![Alt text](/path/to/img.jpg)
+![Alt text](https://cdn.blog.psafe.com/en/blog/wp-content/uploads/2016/10/BLOG_EN_0510_Most-Useful-Coding-and-Programming-Languages-to-Know.jpg)
