@@ -10,17 +10,6 @@ Programming can be presented in various languages.
 ##  Different Coding Languages:
 
 ><strong>HTML</strong> - The HTML <meta> Element. The <meta> element is used to specify which character set is used, page description, keywords, author, and other metadata.
-+ Example:
- ``<!DOCTYPE html>
-<html>
-<body>
-
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
-</body>
-</html>``
 + [More about HTML](https://en.wikipedia.org/wiki/HTML "Title")
 
 ><strong>JavaScript</strong> - Javascript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.
