@@ -24,7 +24,7 @@ Programming can be presented in various languages.
 ><strong>Java</strong> - Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
 + [More about Java](https://en.wikipedia.org/wiki/Java "Title")
 
-><strong>CSS</strong> - CSS. Stands for "Cascading Style Sheet." Cascading style sheets are used to format the layout of Web pages. They can be used to define text styles, table sizes, and other aspects of Web pages that previously could only be defined in a page's HTML.
+><strong>CSS</strong> - CSS  Stands for "Cascading Style Sheet." Cascading style sheets are used to format the layout of Web pages. They can be used to define text styles, table sizes, and other aspects of Web pages that previously could only be defined in a page's HTML.
 + [More about CSS](https://en.wikipedia.org/wiki/CSS "Title")
 
 ><strong>SQL</strong> - Definition - What does Structured Query Language (SQL) mean? Structured Query Language (SQL) is a standard computer language for relational database management and data manipulation. SQL is used to query, insert, update and modify data.
