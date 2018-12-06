@@ -19,7 +19,7 @@ function draw() {
     sq.display();
     
     // display all the food
-    for(var i = 0; i < numFood; i++) {
+    for(var i = 0; i < feed.length; i++) {
         feed[i].display();
     }
 }
@@ -53,13 +53,14 @@ function Squirrel() {
     
     this.eat = function() {
         console.log('try to eat');
-        for(var i = 0; i < numFood; i++) {
+        for(var i = 0; i < feed.length; i++) {
             var food = feed[i];
             var d = this.getDistance(food);
             var r1 = food.foodSize / 2;
             var r2 = diameter / 2;
             if(r1 + r2 > d) {
                 console.log('hit');
+                feed.splice(i,1);
             }
         }
     }
