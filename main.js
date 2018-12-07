@@ -9,8 +9,15 @@ function setup() {
     sq = new Squirrel();
 
     // initializing 10 pieces of food
+    var p = int(random(0,numFood));
     for(var i = 0; i < numFood; i++) {
-        feed.push(new Food(random(width), random(height)));
+        if(i === p) {
+            var food = new Food(random(width), random(height));
+            food.poisonous = true;
+            feed.push(food);
+        } else {
+            feed.push(new Food(random(width), random(height)));
+        }
     }
 }
 
@@ -22,20 +29,28 @@ function draw() {
     for(var i = 0; i < feed.length; i++) {
         feed[i].display();
     }
+    
+    text("Food remaing: " + feed.length, 100, 50);
 }
 
 function mousePressed() {
     sq.eat();
+    
 }
 
 function Food(x, y) {
     this.x = x;
     this.y = y;
-    this.color = color(255, 0, 0);
     this.foodSize = 50;
+    this.poisonous = false;
     
     this.display = function() {
-        fill(this.color);
+        if(this.poisonous) {
+            fill(255,0,255);
+        } else {
+            fill(255,0,0);
+        }
+        
         ellipse(this.x, this.y, this.foodSize, this.foodSize);
     }
 }
@@ -52,14 +67,16 @@ function Squirrel() {
     }
     
     this.eat = function() {
-        console.log('try to eat');
         for(var i = 0; i < feed.length; i++) {
             var food = feed[i];
             var d = this.getDistance(food);
             var r1 = food.foodSize / 2;
             var r2 = diameter / 2;
+            
             if(r1 + r2 > d) {
-                console.log('hit');
+                if(food.poisonous) {
+                    window.alert("You have died!");
+                }
                 feed.splice(i,1);
             }
         }
@@ -103,8 +120,13 @@ function Squirrel() {
     ellipse(x - 42, y - 26, 32, 32);
 
     //mouth
-    fill('#a0a0a0');
-    triangle(x, y + 20, x - 20, y + 40, x, y + 30);
-    triangle(x, y + 20, x + 20, y + 40, x, y + 30);
+    if(mouseIsPressed) {
+        fill(0);
+        ellipse(x, y + 45, 60, 35);
+    } else {
+        fill('#9a7500');
+        triangle(x, y + 20, x - 20, y + 40, x, y + 30);
+        triangle(x, y + 20, x + 20, y + 40, x, y + 30);
+    }
     }
 }
