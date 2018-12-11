@@ -81,7 +81,7 @@ function Kitten() {
           window.alert("You have died!");
           console.log('poison!');
           Kitten.poisonous = true;
-          setTimeout(function() {
+          setTimeout(function () {
             Kitten.poisonous = false;
           }, 2000);
           score = 0;
@@ -91,7 +91,7 @@ function Kitten() {
       }
     }
   }
-  
+
   this.display = function () {
     background(255);
     x = mouseX;
