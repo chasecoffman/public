@@ -84,6 +84,7 @@ function Kitten() {
           setTimeout(function() {
             Kitten.poisonous = false;
           }, 2000);
+          score = 0;
         }
         feed.splice(i, 1);
         score++;
