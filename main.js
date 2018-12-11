@@ -6,6 +6,7 @@ var a = [1, 2, 3];
 
 function setup() {
   createCanvas(740, 480);
+  textSize(32);
   cat = new Kitten();
 
   // initializing 10 pieces of food
@@ -30,7 +31,7 @@ function draw() {
     feed[i].display();
   }
 
-  text("Food remaing: " + feed.length, 10, 10);
+  text("Score: " + feed.length, 10, 25);
 }
 
 function mousePressed() {
