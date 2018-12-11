@@ -1,6 +1,7 @@
 var cat;
 var feed = []; // an empty array
 var numFood = 10;
+var score = 0;
 
 var a = [1, 2, 3];
 
@@ -31,12 +32,12 @@ function draw() {
     feed[i].display();
   }
 
-  text("Score: " + feed.length, 10, 25);
+  text("Score: " + score, 10, 25);
 }
 
 function mousePressed() {
   cat.eat();
-
+  feed.push(new Food(random(width), random(height)));
 }
 
 function Food(x, y) {
@@ -85,6 +86,7 @@ function Kitten() {
           }, 2000);
         }
         feed.splice(i, 1);
+        score++;
       }
     }
   }
