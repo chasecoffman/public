@@ -10,8 +10,12 @@ function setup() {
   textSize(32);
   cat = new Kitten();
 
-  // initializing 10 pieces of food
-  var p = int(random(0, numFood));
+  makeFood();
+}
+
+function makeFood() {
+    // initializing 10 pieces of food
+  var p = parseInt(Math.random() * 10) + 5;//  int(random(0, numFood));
   for (var i = 0; i < numFood; i++) {
     if (i === p) {
       var food = new Food(random(width), random(height));
